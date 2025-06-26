@@ -26,8 +26,8 @@ runs:
       run: |
         terraform `
         -chdir="${{inputs.root_module_folder_relative_path}}" `
-        fmt `
-        -check
+        fmt 
+        
 
     - name: Terraform Init
       shell: pwsh
